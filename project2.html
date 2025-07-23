@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+</head>
+<body>
+    <div>
+        <h1>BMI calculator</h1>
+        <form >
+            <h3>Height in cm : </h3> 
+            <input type="text" id="height" placeholder="Enter your height">
+            <h3>weight in kg : </h3>
+            <input type="text" id="weight" placeholder="Enter your weight">
+
+            <button id="calculate">Calculate</button>
+
+            <h2>BMI Weight Guide</h2>
+            <ul>
+                <li>Underweight: BMI less than 18.5</li>
+                <li>Normal weight: BMI between 18.5 and 24.9</li>
+                <li>Overweight: BMI between 25 and 29.9</li>
+                <li>Obesity: BMI 30 or greater</li>
+            </ul>
+        </form>
+        <div class="result">
+            <h2 id="result">Your BMI will be displayed here</h2>
+            <h3 id="category"></h3>
+            
+        </div>
+    </div>
+    <script src="project2.js"></script>
+    <style> 
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+
+        }
+        div{
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+    </style>
+</body>
+</html>
